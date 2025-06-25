@@ -89,31 +89,37 @@ nav a {
   100% { transform: translateX(10%) scale(1.5); }
 }
 
-/* TRANSITION SECTION */
+/* Transition divider */
 .transition-hint {
   height: 120px;
-  background: linear-gradient(to bottom, var(--halure), #c9a484, #8b5c38);
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+  background: linear-gradient(to bottom, transparent, #8b5c38);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 80%);
 }
 
-/* FEATURES SECTION (wood-themed) */
-section.features {
-  background: #8b5c38;
+/* New sauna zone */
+.sauna-zone {
+  background: linear-gradient(180deg, #8b5c38 0%, #7b4a2e 50%, #6a3d25 100%);
   color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Feature grid */
+.features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  padding: 6rem 2rem;
-  margin-top: 0;
+  padding: 4rem 2rem;
 }
 
 .feature {
-  background: #a8744f;
+  background: rgba(255, 255, 255, 0.08);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.2s ease;
   color: white;
+  backdrop-filter: blur(4px);
 }
 
 .feature:hover {
