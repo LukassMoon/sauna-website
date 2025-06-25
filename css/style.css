@@ -1,30 +1,97 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #fff;
-  color: #111;
-}
 
-header {
-  background: #EFF4EC; /* Halure */
-  padding: 1rem;
-  text-align: center;
-}
+    :root {
+      --halure: #EFF4EC;
+      --dark: #111;
+      --accent: #5e8566;
+      --bg: #fafafa;
+    }
 
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #333;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-main {
-  padding: 2rem;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+    }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
+    header {
+      background: var(--halure);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
 
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 3rem;
+      background: linear-gradient(to bottom, var(--halure), transparent);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #555;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #466c51;
+    }
+
+    section.features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--halure);
+      font-size: 0.9rem;
+      color: #666;
+    }
+ 

@@ -1,2 +1,4 @@
-// Placeholder for future JS logic
-console.log("Site is live!");
+
+function scrollToFeatures() {
+  document.getElementById("features").scrollIntoView({ behavior: "smooth" });
+}
