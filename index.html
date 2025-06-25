@@ -7,9 +7,9 @@
   <meta name="description" content="Discover premium saunas for modern Latvian lifestyles. Designed for wellness and crafted with style." />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
- 
 </head>
 <body>
+
   <header>
     <div class="logo">Saunas Latvia</div>
     <nav>
@@ -21,14 +21,12 @@
   </header>
 
   <section class="hero">
-  <h1>Your Modern Sauna Escape</h1>
-  <p>Nature-inspired. Latvian-built. Wellness-focused.</p>
-  <button class="cta" onclick="scrollToFeatures()">Explore Features</button>
-</section>
+    <h1>Your Modern Sauna Escape</h1>
+    <p>Nature-inspired. Latvian-built. Wellness-focused.</p>
+    <button class="cta" onclick="scrollToFeatures()">Explore Features</button>
+    <div class="hero-smoke"></div> <!-- Optional smoke effect -->
+  </section>
 
-  <section class="transition-hint"></section>
-
- <section class="sauna-zone">
   <section id="features" class="features">
     <div class="feature" onclick="scrollToDetail('detail1')">
       <h3>Nordic Efficiency</h3>
@@ -44,23 +42,26 @@
     </div>
   </section>
 
-  <section id="detail1" class="detail">
-    <img src="assets/nordic-placeholder.jpg" alt="Nordic Efficiency Placeholder">
-    <h2>Nordic Efficiency</h2>
-    <p>Placeholder details for Nordic Efficiency. More content coming soon...</p>
-  </section>
+  <section class="transition-hint"></section>
 
-  <section id="detail2" class="detail">
-    <img src="assets/weatherproof-placeholder.jpg" alt="Weatherproof Craftsmanship Placeholder">
-    <h2>Weatherproof Craftsmanship</h2>
-    <p>Placeholder details for Weatherproof Craftsmanship. More content coming soon...</p>
-  </section>
+  <section class="sauna-zone">
+    <section id="detail1" class="detail">
+      <img src="assets/nordic-placeholder.jpg" alt="Nordic Efficiency Placeholder">
+      <h2>Nordic Efficiency</h2>
+      <p>Placeholder details for Nordic Efficiency. More content coming soon...</p>
+    </section>
 
-  <section id="detail3" class="detail">
-    <img src="assets/plugnplay-placeholder.jpg" alt="Plug & Play Simplicity Placeholder">
-    <h2>Plug-&-Play Simplicity</h2>
-    <p>Placeholder details for Plug-&-Play Simplicity. More content coming soon...</p>
-  </section>
+    <section id="detail2" class="detail">
+      <img src="assets/weatherproof-placeholder.jpg" alt="Weatherproof Craftsmanship Placeholder">
+      <h2>Weatherproof Craftsmanship</h2>
+      <p>Placeholder details for Weatherproof Craftsmanship. More content coming soon...</p>
+    </section>
+
+    <section id="detail3" class="detail">
+      <img src="assets/plugnplay-placeholder.jpg" alt="Plug & Play Simplicity Placeholder">
+      <h2>Plug-&-Play Simplicity</h2>
+      <p>Placeholder details for Plug-&-Play Simplicity. More content coming soon...</p>
+    </section>
   </section>
 
   <footer>
@@ -68,6 +69,7 @@
   </footer>
 
   <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
+
   <script src="js/main.js"></script>
   <script>
     const observer = new IntersectionObserver((entries) => {

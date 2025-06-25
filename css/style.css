@@ -89,78 +89,65 @@ nav a {
   100% { transform: translateX(10%) scale(1.5); }
 }
 
-/* Transition divider */
-.transition-hint {
-  height: 120px;
-  background: linear-gradient(to bottom, transparent, #8b5c38);
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 80%);
+/* Keep features on the clean default background */
+.features {
+  background: transparent;
 }
 
-/* New sauna zone */
-.sauna-zone {
-  background: linear-gradient(180deg, #8b5c38 0%, #7b4a2e 50%, #6a3d25 100%);
-  color: white;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 
-/* Feature grid */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  padding: 4rem 2rem;
-}
-
-.feature {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease;
-  color: white;
-  backdrop-filter: blur(4px);
-}
-
-.feature:hover {
-  transform: translateY(-6px);
-}
-
-.feature h3 {
-  color: white;
-}
-
-/* DETAILS SECTION */
-.detail {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease;
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  padding: 6rem 2rem;
   background: transparent;
 }
 
-.detail.visible {
+/* Visual hint at bottom of screen */
+.transition-hint {
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #8b5c38);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+  margin-top: -40px;
+}
+
+/* Sauna zone: deep tone, new atmosphere */
+.sauna-zone {
+  background: linear-gradient(180deg, #8b5c38 0%, #6e412b 100%);
+  color: white;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sauna-zone .detail {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.sauna-zone .detail.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.detail img {
+.sauna-zone .detail img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  background: #ccc;
   opacity: 0;
   transition: opacity 1s ease;
 }
 
-.detail.visible img {
+.sauna-zone .detail.visible img {
   opacity: 1;
 }
+
 
 /* FOOTER */
 footer {
