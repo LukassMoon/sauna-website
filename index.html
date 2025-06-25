@@ -7,6 +7,28 @@
   <meta name="description" content="Discover premium saunas for modern Latvian lifestyles. Designed for wellness and crafted with style." />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 99;
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
+      border: none;
+      background-color: #5e8566;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: opacity 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #466c51;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,24 +48,40 @@
   </section>
 
   <section id="features" class="features">
-    <div class="feature">
+    <div class="feature" onclick="scrollToDetail('detail1')">
       <h3>Nordic Efficiency</h3>
       <p>Engineered to retain heat efficiently using sustainable timber and precision sealing.</p>
     </div>
-    <div class="feature">
+    <div class="feature" onclick="scrollToDetail('detail2')">
       <h3>Weatherproof Craftsmanship</h3>
       <p>Our saunas stand strong through Baltic winters and summer heatwaves.</p>
     </div>
-    <div class="feature">
+    <div class="feature" onclick="scrollToDetail('detail3')">
       <h3>Plug-&-Play Simplicity</h3>
       <p>Easy setup. Instant relaxation. Minimal tools required.</p>
     </div>
+  </section>
+
+  <section id="detail1" class="detail">
+    <h2>Nordic Efficiency</h2>
+    <p>Placeholder details for Nordic Efficiency. More content coming soon...</p>
+  </section>
+
+  <section id="detail2" class="detail">
+    <h2>Weatherproof Craftsmanship</h2>
+    <p>Placeholder details for Weatherproof Craftsmanship. More content coming soon...</p>
+  </section>
+
+  <section id="detail3" class="detail">
+    <h2>Plug-&-Play Simplicity</h2>
+    <p>Placeholder details for Plug-&-Play Simplicity. More content coming soon...</p>
   </section>
 
   <footer>
     <p>© 2025 Saunas Latvia. Designed for balance and restoration.</p>
   </footer>
 
+  <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
   <script src="js/main.js"></script>
 </body>
 </html>
