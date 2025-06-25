@@ -88,28 +88,26 @@ nav a {
   0% { transform: translateX(-10%) scale(1.5); }
   100% { transform: translateX(10%) scale(1.5); }
 }
-
-/* Keep features on the clean default background */
-.features {
-  background: transparent;
+.feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  color: var(--dark);
 }
 
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  padding: 6rem 2rem;
-  background: transparent;
+.feature:hover {
+  transform: translateY(-6px);
 }
 
 /* Visual hint at bottom of screen */
 .transition-hint {
-  height: 80px;
-  background: linear-gradient(to bottom, transparent, #8b5c38);
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+  height: 100px;
+  background: radial-gradient(ellipse at center, rgba(139, 92, 56, 0.25) 0%, transparent 70%);
   margin-top: -40px;
 }
+
 
 /* Sauna zone: deep tone, new atmosphere */
 .sauna-zone {
