@@ -1,65 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Saunas Latvia</title>
-  <meta name="description" content="Learn about Saunas Latvia — our mission, materials, and modern approach to wellness." />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo">Saunas Latvia</div>
-    <nav>
-      <a href="index.html#features">Features</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="about fade-contrast">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        Saunas Latvia builds high-quality sauna products with clean design, durable materials, and Nordic simplicity. We blend modern wellness with traditional heat — ideal for your home, countryside, or retreat.
-      </p>
-      <div class="features">
-        <div class="feature">
-          <h3>Crafted in Latvia</h3>
-          <p>Our saunas are built locally using sustainable wood and proven methods.</p>
-        </div>
-        <div class="feature">
-          <h3>Smart Simplicity</h3>
-          <p>Modern layouts. Minimal upkeep. Plug & play where possible.</p>
-        </div>
-        <div class="feature">
-          <h3>Friendly Support</h3>
-          <p>Latvian-based team ready to help with setup, questions, and advice.</p>
-        </div>
+<section class="about fade-contrast">
+  <div class="container">
+    <h2>Our Story</h2>
+    <div class="story">
+      <div class="story-text">
+        <p>
+          Born in Latvia. Inspired by nature. Built for modern life.<br><br>
+          We started with a mission to bring sauna culture into everyday routines — without compromising quality, space, or design. Every unit is crafted locally using natural materials, minimalist form, and efficient tech.
+        </p>
+        <p>
+          Whether you're after a quiet moment alone or social sessions with friends, our builds are designed for comfort, longevity, and low-maintenance joy.
+        </p>
+      </div>
+      <div class="story-img">
+        <img src="assets/nordic-placeholder.jpg" alt="Modern Latvian sauna exterior">
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Saunas Latvia. Designed for balance and restoration.</p>
-  </footer>
-
-  <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
-  <script src="js/main.js"></script>
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.body.classList.add('fade-contrast');
-        } else {
-          document.body.classList.remove('fade-contrast');
-        }
-      });
-    }, { threshold: 0.3 });
-
-    observer.observe(document.querySelector('.about'));
-  </script>
-</body>
-</html>
+  </div>
+</section>

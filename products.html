@@ -1,63 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products | Saunas Latvia</title>
-  <meta name="description" content="Browse our modern sauna products – efficient, elegant, and ready to install." />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo">Saunas Latvia</div>
-    <nav>
-      <a href="index.html#features">Features</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="about fade-contrast">
-    <div class="container">
-      <h2>Our Sauna Range</h2>
-      <p>From compact personal retreats to full-sized outdoor cabins — all built with precision and care.</p>
-      <div class="features">
-        <div class="feature">
-          <h3>Mini Sauna</h3>
-          <p>Perfect for small homes or balconies. Quick heat-up, plug-in ready.</p>
-        </div>
-        <div class="feature">
-          <h3>Outdoor Cabin</h3>
-          <p>Spacious wooden builds for family or guests — weatherproof and durable.</p>
-        </div>
-        <div class="feature">
-          <h3>Custom Design</h3>
-          <p>Need a special fit? We build to your specs, style, and site.</p>
-        </div>
+<section class="about fade-contrast">
+  <div class="container">
+    <h2>Our Sauna Lineup</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Mini Sauna</h3>
+        <p class="tag">Indoor</p>
+        <p>Compact and stylish. Plug-in design, no tools needed.</p>
+      </div>
+      <div class="product-card">
+        <h3>Outdoor Cabin</h3>
+        <p class="tag">Outdoor</p>
+        <p>Spacious layout, weather-resistant wood, high heat retention.</p>
+      </div>
+      <div class="product-card">
+        <h3>Custom Orders</h3>
+        <p class="tag">Tailored</p>
+        <p>Need something unique? Let’s build it together.</p>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Saunas Latvia. Designed for balance and restoration.</p>
-  </footer>
-
-  <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
-  <script src="js/main.js"></script>
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.body.classList.add('fade-contrast');
-        } else {
-          document.body.classList.remove('fade-contrast');
-        }
-      });
-    }, { threshold: 0.3 });
-
-    observer.observe(document.querySelector('.about'));
-  </script>
-</body>
-</html>
+  </div>
+</section>
