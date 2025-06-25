@@ -1,3 +1,6 @@
+/* =======================
+   🌿 Base + Theme
+========================== */
 :root {
   --halure: #EFF4EC;
   --dark: #111;
@@ -18,6 +21,9 @@ body {
   color: var(--dark);
 }
 
+/* =======================
+   🔝 Header & Navigation
+========================== */
 header {
   background: var(--halure);
   padding: 1.5rem 2rem;
@@ -34,6 +40,9 @@ nav a {
   font-weight: 600;
 }
 
+/* =======================
+   🏠 Hero Section (Home)
+========================== */
 .hero {
   text-align: center;
   padding: 6rem 2rem 3rem;
@@ -51,6 +60,9 @@ nav a {
   color: #555;
 }
 
+/* =======================
+   🟢 CTA Buttons
+========================== */
 .cta {
   margin-top: 2rem;
   padding: 1rem 2rem;
@@ -67,6 +79,9 @@ nav a {
   background: #466c51;
 }
 
+/* =======================
+   🔹 Home Features Grid
+========================== */
 section.features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -86,6 +101,9 @@ section.features {
   transform: translateY(-6px);
 }
 
+/* =======================
+   📘 About Page
+========================== */
 .about {
   padding: 4rem 2rem;
 }
@@ -130,6 +148,9 @@ section.features {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* =======================
+   🛒 Products Page
+========================== */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -160,6 +181,9 @@ section.features {
   margin-bottom: 1rem;
 }
 
+/* =======================
+   ✉️ Contact Page
+========================== */
 .contact-grid {
   display: flex;
   flex-wrap: wrap;
@@ -187,6 +211,9 @@ section.features {
   width: 100%;
 }
 
+/* =======================
+   🔻 Footer
+========================== */
 footer {
   text-align: center;
   padding: 2rem;
@@ -195,8 +222,9 @@ footer {
   color: #666;
 }
 
-
-
+/* =======================
+   📱 Responsive
+========================== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -227,7 +255,9 @@ footer {
   }
 }
 
-/* Scroll-to-top button */
+/* =======================
+   ⬆️ Scroll-to-Top Button
+========================== */
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -249,13 +279,18 @@ footer {
   background-color: #466c51;
 }
 
-/* Detail fade-in + diagonal contrast effect */
+/* =======================
+   🌓 Scroll Contrast Mode
+========================== */
 body.fade-contrast {
   background: repeating-linear-gradient(20deg, #1a1a1a, #1a1a1a 10px, #2a2a2a 10px, #2a2a2a 20px);
   color: #f2f2f2;
   transition: background 1s ease, color 1s ease;
 }
 
+/* =======================
+   ✨ Detail Reveal Animation
+========================== */
 .detail {
   opacity: 0;
   transform: translateY(40px);
