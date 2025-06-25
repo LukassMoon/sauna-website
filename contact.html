@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Saunas Latvia</title>
+  <meta name="description" content="Reach out to Saunas Latvia — we're here to help with any questions or orders." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Saunas Latvia</h1>
+    <div class="logo">Saunas Latvia</div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
       <a href="products.html">Products</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Contact</h2>
-    <p>Email: info@saunalv.net</p>
-    <p>Phone: +371 0000 0000</p>
-    <form>
-      <label>Name: <input type="text" name="name" required></label><br>
-      <label>Email: <input type="email" name="email" required></label><br>
-      <label>Message:<br><textarea name="message" required></textarea></label><br>
-      <button type="submit">Send</button>
-    </form>
-  </main>
+  <section class="about fade-contrast">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        Have a question, want a quote, or just curious about saunas? Reach out — we’re here to help.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <h3>Email</h3>
+          <p><a href="mailto:info@saunaslatvia.lv">info@saunaslatvia.lv</a></p>
+        </div>
+        <div class="feature">
+          <h3>Phone</h3>
+          <p><a href="tel:+37100000000">+371 000 00000</a></p>
+        </div>
+        <div class="feature">
+          <h3>Location</h3>
+          <p>Riga, Latvia — visits by appointment only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Saunas Latvia</p>
+    <p>© 2025 Saunas Latvia. Designed for balance and restoration.</p>
   </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
+  <script src="js/main.js"></script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.body.classList.add('fade-contrast');
+        } else {
+          document.body.classList.remove('fade-contrast');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(document.querySelector('.about'));
+  </script>
 </body>
 </html>
